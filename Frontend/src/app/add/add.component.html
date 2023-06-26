@@ -1,0 +1,64 @@
+<html>
+  <div style="text-align-last: right; padding-right: 45%">
+    <h1>Add Appointments Here</h1>
+
+    <label><b>Appointment Name</b></label
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="name"
+      id="name"
+      #name
+    /><br />
+    <label><b>Description</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="description"
+      id="description"
+      #description
+    /><br />
+    <label><b>Date</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="date"
+      id="date"
+      #date
+    /><br />
+    <label><b>Time</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="time"
+      id="time"
+      #time
+    /><br />
+
+    <label><b>Place</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="place"
+      id="place"
+      #place
+    /><br /><br />
+    <button
+      type="button"
+      style="margin-right: 6%"
+      (click)="
+        Add(name.value, description.value, date.value, time.value, place.value)
+      "
+    >
+      Add
+    </button>
+    <button type="button" style="margin-right: 15px">
+      <a routerLink="/home" style="text-decoration: none; color: black">Back</a>
+    </button>
+  </div>
+</html>
